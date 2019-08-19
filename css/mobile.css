@@ -1,0 +1,16 @@
+@media (max-width: 700px) {
+  /* Responsive Design consiste en que se adapten los estilos, tamaño y posicion de los objetos en la pagina web */
+  .main_section{
+    padding: 2%;
+  }
+  .products{
+    display: inherit;
+    height: auto;
+  }
+  .product{
+    margin-top: auto;
+  }
+  .inf_gatos, .comentarios{
+    display: inherit;
+  }
+}

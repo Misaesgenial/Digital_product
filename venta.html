@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!-- encabezado de la pagina tambien enlaces al css y js asi como meta y enlaces -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <title>Comidaparagatos</title>
+</head>
+<body>
+  <!-- Aquie empieza el navbar -->
+  <nav class="fadeInDown"> <!-- enlace de navegador -->
+    <div class="brand_image"><!--imagen principal  -->
+      <img src="images/logo.png" alt="">
+    </div>
+    <div class="Nav_options"><!-- opciones de la pagina -->
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="producto.html">Product y description</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Aqui termian los margenes de las pagina -->
+  <br><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="modulo_pago">
+          <div class="modulo_pago_images">
+            <img src="images/box2.png" alt="">
+          </div>
+          <h3>Producto 1</h3>
+          <p>Este producto es el mejor en su especie tienes que comprarlo ya que aun tiengo hambre y tengo que aliemtar a mis hijos</p>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="modulo_pago">
+          <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EK9QQ3EZKGSSN" method="post">
+            <label for="name">Nombre:</label><br><!-- El label me muestra el nombre por encima de la caja de texto-->
+            <input type="text" placeholder="Write" Name="name" class="data"><br><!--placeholder: es para sombra sobre la caja-->  <!--El input es la entrada de datos a la pagina el nombre es la manarea de linkear y reconocer el texto ingresado-->
+            <label for="mail">Mail:</label><br>
+            <input type="text" name="mail" class="data"><br>
+            <label for="Telefono">Telefono:</label><br>
+            <input type="text" name="Telefono" class="data">
+            <input type="submit"class="main_button" name="submint" value="Pago realizado">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  <!-- footer este es la parte de bajo de la pagina -->
+  <footer>
+    <div class="option">Terminosy condiciones</div>
+    <div class="option">contacto@brand.com</div>
+  </footer>
+<script src="scripts/scripts.js" charset="utf-8"></script>
+</body>
+</html>

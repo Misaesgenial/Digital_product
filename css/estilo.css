@@ -1,0 +1,139 @@
+/* Guardar variables */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');/* letras */
+:root{
+  --green-color: #7ACC2D;
+  --box: 0px 0 2px 1px #e6e5e9
+}
+html, body{
+  padding: 0px; /*cuatro márgenes interiores simultáneamente*/
+  margin: 0px; /*	cuatro márgenes exterior simultáneamente*/
+  font-size: 15px; /*tamaño de texto*/
+  font-family: 'Indie Flower', cursive; /*tipo de letra (fuente)*/
+}
+nav{
+  display: flex; /*	tipo de caja (flex o inline-flex) poder liberar una caja para su manejo*/
+  background-color: var(--green-color); /*color de fondo*/
+  padding: 10px;
+  /* color: white; */
+  justify-content: space-between; /*alineación en la dirección principal*/
+  align-items: center; /*	alineación en la dirección secundaria (una línea)*/
+}
+label{
+  font-size: 10px;
+}
+nav ul{
+  display: flex;
+}
+nav li{
+  padding-right: 20px;
+  list-style: none; /*propiedad compuesta (estilo de lista)*/
+}
+nav li a{
+  color: black;
+  text-decoration: none; /*	decoración del texto*/
+}
+nav li a:hover{
+  color: white;
+}
+/* ----------------- Seccion Main--------------------- */
+.main_section{
+  padding: 15%;
+  text-align: center; /* alineación del texto */
+}
+.products{
+  background-image: url("../images/curve.png"); /* imagen de fondo */
+  height: 50px; /* altura */
+  background-size: cover; /* tamaño de la imagen de fondo */
+  background-position: center top; /* posición de la imagen de fondo */
+  padding: 20%;
+  display: flex;
+}
+.product{
+  padding: 10px;
+  margin-top: -240px;/* inclinacion del objeto */
+}
+.product .content{
+  background-color: white;
+  padding: 15px;
+  box-shadow: var(--box);
+}
+.img_content{
+  text-align: center;
+}
+.main_button{
+  background-color: var(--green-color);
+  width: 100%; /* tamaño del boton */
+  padding: 10px;
+  font-size: 12px;
+  color: white;
+  border: 0;
+  cursor: pointer; /* cambio de flecha del cursor a puntero */
+  border-radius: 2px; /* Borde circular en las esquinas del las cajas */
+}
+.main_button:hover{
+  background-color: #5e9e22;
+
+}
+/* Criacion de maquetacion ejercicio*/
+.inf_gatos{
+  padding: 5%; /* separado de imagenes interiores */
+  margin: 50px;
+  display: flex; /* permite soltar los items y que se puedan alienar a un lado  */
+  align-items center: /* alineas los itmes en el centro */
+  height: auto; /* que tan grande esta el margen del objeto */
+}
+.description_info{
+  padding: 100px; /* separacion entre los objetos */
+}
+.img_info{
+  text-align: center; /* centra el objeto */
+}
+/* Comentarios */
+.tittle_Menciones{
+  text-align:center; /*Centra el titulo de Menciones*/
+}
+.menciones{
+  box-shadow: var(--box);
+}
+.comentarios .comentario{
+  box-shadow: var(--box);/*crea las cajas para cada comentario*/
+  border-radius: 10px; /*radio de las esquinas de la caja */
+  padding: 1px; /*separacion del contenido al borde*/
+  margin: 10px; /*separacion entre cajas de contenido*/
+}
+.comentarios{
+  display: flex; /*Desalinea las cajas de comentarios*/
+  padding: 60px;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background: gray;
+  padding: 10px;
+  color: white;
+}
+.option_Contact a{
+  color: #7ACC2D;
+}
+/* seccion de ventana */
+.modulo_pago{
+  background: white;
+  box-shadow: var(--box);
+  padding: 10px;
+}
+.modulo_pago_images{
+  max-width: 150px; /*Maximo de ancho que se puede utilizar*/
+  text-align: center;
+  margin:auto;
+}
+.data{
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 2px solid black;
+  box-sizing: border-box;
+}
+.modulo_pago .main_button{
+  margin-top: 10px;
+
+}
